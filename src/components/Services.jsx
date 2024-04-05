@@ -55,11 +55,9 @@ const Services = () => {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex items-start p-4 gap-2 flex-col mt-12"
+        className="flex items-start p-4 gap-2 flex-col mt-2"
       >
-        <h1 className="text-3xl font-bold mb-4 ml-4 text-[#3cefab]">
-          Services
-        </h1>
+        <h1 className="text-3xl font-bold  ml-4 text-[#3cefab]">Services</h1>
         <div
           className="p-4 gap-4 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 w-full"
           style={{
@@ -99,10 +97,10 @@ const Services = () => {
               transition={{ delay: 3 * 0.5, duration: 0.7 }}
             >
               I am Abreham Tilahun, a highly skilled full-stack developer with
-              expertise in MERN stack and Automation Expert and React Native mobile app development.
-              With over more than one year of experience, I have successfully completed
-              numerous projects that have involved both front-end and back-end
-              development.
+              expertise in MERN stack and Automation Expert and React Native
+              mobile app development. With over more than one year of
+              experience, I have successfully completed numerous projects that
+              have involved both front-end and back-end development.
             </motion.p>
           </div>
           <div className=" flex gap-4 flex-col w-[500px] justify-between">

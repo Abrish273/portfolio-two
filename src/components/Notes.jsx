@@ -55,7 +55,7 @@ const Notes = () => {
         <h1 className="text-3xl font-bold mb-8 text-[#3cefab]">
           My Portofolio
         </h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-20 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-24 gap-8">
           {certificates.map((c) => (
             <motion.div
               key={c.id}
@@ -78,6 +78,12 @@ const Notes = () => {
             </motion.div>
           ))}
         </div>
+        <div
+          style={{ backgroundColor: "#272727", width: "100%", height: "36px" }}
+        />
+        <div
+          style={{ backgroundColor: "#272727", width: "100%", height: "7px" }}
+        />
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ import cssIcon from "../assets/css.png";
 import htmlIcon from "../assets/html.png";
 import { Link } from "react-router-dom";
 import { Email, GitHub, LinkedIn } from "@mui/icons-material";
+import CV from "../assets/abrehamcv.pdf";
 
 const Homes = () => {
   const [counterValue, setCounterValue] = useState(0);
@@ -43,13 +44,20 @@ const Homes = () => {
     const intervalId = setInterval(updateCounter, interval);
     return () => clearInterval(intervalId);
   }, []);
-  const pdfFilePath = "";
+
   return (
-    <div style={{ display: "flex", flexWrap: "wrap" }}>
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space-around",
+        gap: 5,
+      }}
+    >
       {/* <div className="md:h-[89vh] grid grid-cols-1 md:grid-cols-2 "> */}
-      <div className="flex items-start justify-center flex-col gap-6 flex-grow p-4 h-[89vh]">
+      <div className="flex items-start flex-col gap-6 flex-grow  h-[89vh]">
         <div className="flex items-center justify-start flex-col gap-4 w-full  p-4">
-          <div className="flex items-start justify-start flex-col gap-4 w-[500px] p-4">
+          <div className="flex items-start justify-start flex-col gap-4 md:w-[500px] p-4">
             <motion.p
               className=" text-2xl bg-[#3cefab] text-[#272727] font-bold px-1"
               initial={{ opacity: 0 }}
@@ -64,6 +72,7 @@ const Homes = () => {
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.9, type: "spinner" }}
+                style={{ fontSize: "2rem" }}
               >
                 Coding is my passion
               </motion.h1>
@@ -72,6 +81,7 @@ const Homes = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 1.5, duration: 0.9, type: "spinner" }}
+                style={{ fontSize: "2rem" }}
               >
                 Show me your code...
               </motion.h1>
@@ -81,6 +91,7 @@ const Homes = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.5, duration: 1.2, type: "spinner" }}
+              style={{ marginRight: "10rem" }}
             >
               I create and build things with an emphasis on details. I'm
               passionate about what I am doing.
@@ -107,12 +118,12 @@ const Homes = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ delay: 2, duration: 1.5, type: "spinner" }}
             >
-              <Link to={pdfFilePath} target="_blank" download>
+              <Link to={CV} target="_blank" download>
                 <button>Download my CV</button>
               </Link>
             </motion.span>
             <div
-              className=" flex items-center flex-grow-[.6] gap-6 max-sm:hidden"
+              className=" flex items-center flex-grow-[.6] gap-6 "
               //   style={{ display: display }}
             >
               <motion.span
@@ -170,7 +181,7 @@ const Homes = () => {
               </motion.span>
             </div>
             {/* </div> */}
-            <div className="flex gap-8">
+            <div className="flex gap-4">
               <div className="flex items-end gap-2 bg-[#373737] p-2 rounded-[4px]">
                 <span className="text-6xl font-medium">
                   {serviceValue.toString().padStart(2, "0")}
@@ -187,7 +198,7 @@ const Homes = () => {
           </div>
         </div>
       </div>
-      <div className="p-4 flex-grow flex items-center justify-center flex-col relative h-[89vh] overflow-hidden">
+      <div className="p-4 flex-grow flex items-center mt-12  flex-col relative h-[89vh] overflow-hidden">
         <motion.div
           className="w-[400px] h-[400px] rounded-[50%]"
           style={{
@@ -201,6 +212,7 @@ const Homes = () => {
           <motion.img
             src={anonyms}
             alt="anonyms"
+            style={{ objectFit: "cover" }}
             className=" absolute bottom-0 right-auto left-auto h-[60vh]"
             initial={{ y: 1000, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
