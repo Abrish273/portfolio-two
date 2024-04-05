@@ -91,7 +91,7 @@ const Homes = () => {
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 1.5, duration: 1.2, type: "spinner" }}
-              style={{ marginRight: "10rem" }}
+              // style={{ marginRight: "10rem" }}
             >
               I create and build things with an emphasis on details. I'm
               passionate about what I am doing.
