@@ -198,7 +198,7 @@ const Homes = () => {
           </div>
         </div>
       </div>
-      <div className="p-4 flex-grow flex items-center mt-12  flex-col relative h-[89vh] overflow-hidden">
+      <div className="p-4 flex-grow flex items-center mt-6  flex-col relative h-[89vh] overflow-hidden">
         <motion.div
           className="w-[400px] h-[400px] rounded-[50%]"
           style={{
