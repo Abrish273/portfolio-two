@@ -108,7 +108,10 @@ const Homes = () => {
                 animate={{ x: 0, opacity: 1 }}
                 transition={{ delay: 2, duration: 1.5, type: "spinner" }}
               >
-                <Link to={"/"} className=" text-2xl text-[#3cefab] font-bold">
+                <Link
+                  to={"/works"}
+                  className=" text-2xl text-[#3cefab] font-bold"
+                >
                   SEE MY WORK
                 </Link>
               </motion.span>
